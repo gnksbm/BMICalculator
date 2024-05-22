@@ -13,6 +13,10 @@
 		BE80034A2BFC7E94003AE8CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BE8003492BFC7E94003AE8CD /* Base */; };
 		BE80034C2BFC7E96003AE8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE80034B2BFC7E96003AE8CD /* Assets.xcassets */; };
 		BE80034F2BFC7E96003AE8CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BE80034E2BFC7E96003AE8CD /* Base */; };
+		BE8003622BFDDC57003AE8CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8003612BFDDC57003AE8CD /* User.swift */; };
+		BE8003642BFDFD4E003AE8CD /* NumericInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8003632BFDFD4E003AE8CD /* NumericInputError.swift */; };
+		BE8003662BFDFF9A003AE8CD /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8003652BFDFF9A003AE8CD /* BMICalculator.swift */; };
+		BE8003682BFDFFD7003AE8CD /* NumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8003672BFDFFD7003AE8CD /* NumericValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BE80034B2BFC7E96003AE8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE80034E2BFC7E96003AE8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE8003502BFC7E96003AE8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8003612BFDDC57003AE8CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BE8003632BFDFD4E003AE8CD /* NumericInputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericInputError.swift; sourceTree = "<group>"; };
+		BE8003652BFDFF9A003AE8CD /* BMICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
+		BE8003672BFDFFD7003AE8CD /* NumericValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,40 @@
 				BE8003422BFC7E94003AE8CD /* AppDelegate.swift */,
 				BE8003442BFC7E94003AE8CD /* SceneDelegate.swift */,
 				BE8003462BFC7E94003AE8CD /* ViewController.swift */,
+				BE8003692BFDFFFA003AE8CD /* Model */,
+				BE80036A2BFE0004003AE8CD /* Utility */,
 				BE8003482BFC7E94003AE8CD /* Main.storyboard */,
 				BE80034B2BFC7E96003AE8CD /* Assets.xcassets */,
 				BE80034D2BFC7E96003AE8CD /* LaunchScreen.storyboard */,
 				BE8003502BFC7E96003AE8CD /* Info.plist */,
 			);
 			path = SeSac_BMICalculator;
+			sourceTree = "<group>";
+		};
+		BE8003692BFDFFFA003AE8CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE8003612BFDDC57003AE8CD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE80036A2BFE0004003AE8CD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BE8003652BFDFF9A003AE8CD /* BMICalculator.swift */,
+				BE80036B2BFE0036003AE8CD /* NumericValidator */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BE80036B2BFE0036003AE8CD /* NumericValidator */ = {
+			isa = PBXGroup;
+			children = (
+				BE8003672BFDFFD7003AE8CD /* NumericValidator.swift */,
+				BE8003632BFDFD4E003AE8CD /* NumericInputError.swift */,
+			);
+			path = NumericValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8003622BFDDC57003AE8CD /* User.swift in Sources */,
 				BE8003472BFC7E94003AE8CD /* ViewController.swift in Sources */,
+				BE8003642BFDFD4E003AE8CD /* NumericInputError.swift in Sources */,
 				BE8003432BFC7E94003AE8CD /* AppDelegate.swift in Sources */,
+				BE8003662BFDFF9A003AE8CD /* BMICalculator.swift in Sources */,
+				BE8003682BFDFFD7003AE8CD /* NumericValidator.swift in Sources */,
 				BE8003452BFC7E94003AE8CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
